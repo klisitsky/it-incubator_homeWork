@@ -1,0 +1,25 @@
+.App {
+    max-width: 1140px;
+    --header_height: 60px;
+    margin: 0 auto;
+}
+
+.hw {
+    font-family: 'Montserrat', sans-serif;
+
+}
+
+.hwTitle {
+    font-size: 22px;
+    font-weight: 600;
+    line-height: 27px;
+}
+
+.hwTitle:after {
+    content: '';
+    display: block;
+    height: 1px;
+    width: 100%;
+    background-color: #D9D9D9;
+    margin: 10px 0px 24px;
+}

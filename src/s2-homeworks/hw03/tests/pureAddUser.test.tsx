@@ -23,6 +23,7 @@ beforeEach(() => {
 test('name 1', () => {
     name = '1'
     pureAddUser(name, setError, setName, addUserCallback)
+
     expect(name).toBe('')
     expect(error).toBe('')
     expect(added).toBe(true)
@@ -30,6 +31,7 @@ test('name 1', () => {
 test('name 2', () => {
     name = ''
     pureAddUser(name, setError, setName, addUserCallback)
+
     expect(name).toBe('')
     expect(error).toBe('Ошибка! Введите имя!')
     expect(added).toBe(false)
@@ -37,6 +39,7 @@ test('name 2', () => {
 test('name 3', () => {
     name = '    '
     pureAddUser(name, setError, setName, addUserCallback)
+
     expect(name).toBe('    ')
     expect(error).toBe('Ошибка! Введите имя!')
     expect(added).toBe(false)

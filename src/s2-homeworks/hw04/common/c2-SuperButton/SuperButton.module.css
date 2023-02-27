@@ -2,6 +2,7 @@
 }
 
 .disabled {
+  background-color: black;
 }
 
 .secondary {
@@ -11,6 +12,7 @@
 }
 
 .red {
+  background-color: #cc0000;
 }
 
 .default:hover {
@@ -21,7 +23,6 @@
 
 .secondary:hover {
 }
-
 
 .default:active {
 }

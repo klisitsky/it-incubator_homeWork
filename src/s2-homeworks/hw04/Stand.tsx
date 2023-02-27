@@ -49,26 +49,23 @@ const Stand = () => {
                 </div>
                 {/*красная кнопка:*/}
                 <div>
-                    <SuperButton id={'hw4-super-button-red'} xType={'red'}>
+                    <SuperButton id={'hw4-super-button-red'}
+                                 xType={'red'}>
                         red
                     </SuperButton>
                 </div>
                 {/*задизэйбленная кнопка:*/}
                 <div>
-                    <SuperButton
-                        id={'hw4-super-button-disabled'}
-                        xType={'red'}
-                        disabled
-                    >
+                    <SuperButton id={'hw4-super-button-disabled'}
+                                 xType={'red'}
+                                 disabled>
                         disabled
                     </SuperButton>
                 </div>
                 {/*задизэйбленная кнопка:*/}
                 <div>
-                    <SuperButton
-                        id={'hw4-super-button-secondary'}
-                        xType={'secondary'}
-                    >
+                    <SuperButton id={'hw4-super-button-secondary'}
+                                 xType={'secondary'}>
                         secondary
                     </SuperButton>
                 </div>

@@ -2,6 +2,10 @@
 }
 
 .header {
+  display: flex;
+  justify-content: space-between;
+  box-shadow: 0 10px 40px -10px rgba(29, 33, 38, 0.13);
+  padding: 10px;
 }
 
 .header h1 {

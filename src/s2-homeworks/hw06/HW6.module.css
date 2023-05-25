@@ -1,4 +1,9 @@
 .buttonsContainer {
+  margin-top: 24px;
+}
+
+.buttonsContainer > button:not(:last-child) {
+  margin-right: 24px;
 }
 
 .editableSpanContainer {

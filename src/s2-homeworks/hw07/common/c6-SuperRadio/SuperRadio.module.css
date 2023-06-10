@@ -9,7 +9,21 @@
 }
 
 .label {
+  display: flex;
+  margin-bottom: 20px;
+  align-items: center;
+}
+.label::before {
+}
+.span {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  padding-left: 13px;
 }
 
 .options {
+  display: flex;
+  flex-direction: column;
 }

@@ -20,4 +20,4 @@ export const themeReducer = (state = initState, action: ActionsType): InitStateT
 }
 
 type ActionsType = ReturnType<typeof changeThemeId>
-export const changeThemeId = (id: number) => ({ type: 'SET_THEME_ID', id }) // fix any
+export const changeThemeId = (id: number) => ({ type: 'SET_THEME_ID', id } as const) // fix any

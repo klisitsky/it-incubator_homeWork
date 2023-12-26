@@ -52,14 +52,14 @@ const HW13 = () => {
           case 400:
             setCode('Ошибка 400!')
             setImage(error400)
-            setText(e.response.data.info)
-            setInfo('')
+            setText(e.response.data.errorText)
+            setInfo(e.response.data.info)
             break;
           default:
             setCode('Error!')
             setImage(errorUnknown)
-            setText(e.response.data.info)
-            setInfo('')
+            setText(e.response.data.errorText)
+            setInfo(e.response.data.info)
             break;
         }
         setInfo('')

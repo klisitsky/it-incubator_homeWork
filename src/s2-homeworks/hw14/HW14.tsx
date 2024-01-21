@@ -16,7 +16,7 @@ import {useSearchParams} from 'react-router-dom'
 const getTechs = (find: string) => {
     return axios
         .get<{ techs: string[] }>(
-            'https://incubator-personal-page-back.herokuapp.com/api/3.0/homework/test2',
+            'https://samurai.it-incubator.io/api/3.0/homework/test2',
             {params: {find}}
         )
         .catch((e) => {
@@ -32,22 +32,22 @@ const HW14 = () => {
 
     const sendQuery = (value: string) => {
         setLoading(true)
-        getTechs(value)
-            .then((res) => {
+        getTechs(value).then((res) => {
                 // делает студент
-
+                // @ts-ignore
+            setTechs(res.data.techs)
+            setLoading(false)
                 // сохранить пришедшие данные
-
                 //
             })
+
     }
 
     const onChangeText = (value: string) => {
         setFind(value)
         // делает студент
-
         // добавить/заменить значение в квери урла
-        // setSearchParams(
+        setSearchParams({find: value})
 
         //
     }

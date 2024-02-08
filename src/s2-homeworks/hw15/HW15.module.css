@@ -8,20 +8,30 @@
 
 .techHeader {
     width: 50vw;
+    padding: 10px;
 }
 
 .developerHeader {
-
+    padding: 10px;
 }
 
 .row {
     display: flex;
+    padding: 10px;
+    border: gainsboro solid 1px;
 }
 
 .rowHeader {
     display: flex;
+    align-items: center;
+    background-color: lightsteelblue;
+    cursor: pointer;
 }
 
 .loading {
 
+}
+
+.table {
+    margin: 10px;
 }
